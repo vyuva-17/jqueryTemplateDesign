@@ -1,0 +1,159 @@
+/* grid layout style sheet */
+
+.header {
+  grid-area: header;
+}
+
+.scrollbar {
+  grid-area: menu;
+}
+
+.content1_image {
+  grid-area: main;
+}
+
+.content2_image {
+  grid-area: right;
+}
+
+.content3_image {
+  grid-area: main1;
+}
+
+.content4_image {
+  grid-area: right1;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+/* grid container styles*/
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header header header header header '
+   'menu main main  right right '
+    'menu main1  main1 right1 right1'
+     'footer footer footer footer footer ';
+  grid-gap: 10px;
+  background-color: #2196F3;
+}
+
+
+/* grid container styles applying to all child div styles*/
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  box-shadow: 3px 3px 5px 10px #2196F3;
+  font-size: 30px;
+}
+
+
+/* body content overflow*/
+
+body {
+  overflow: auto;
+}
+
+
+/*header ul and li style*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/*header style*/
+
+.header {
+  padding-left: 20px;
+  text-align: center;
+  z-index: 1001
+}
+
+
+/*aside style*/
+
+.force-overflow {
+  
+}
+
+
+/*content1 image style*/
+
+.content1_image {
+  height: 100%;
+}
+
+.scrollbar
+{
+  
+  
+  float: left;
+  height: 100%;
+  width: 500px;
+  background: #F5F5F5;
+  overflow-y: scroll;
+
+
+}
+
+
+
+#wrapper
+{
+  text-align: center;
+  width: 500px;
+    height: 300px;
+  margin: auto;
+}
+
+/*
+ *  STYLE 1
+ */
+
+#style-1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+ /*all content image style*/
+
+#content1_image1,
+#content2_image2,
+#content3_image3,
+#content4_image4 {
+  width: 100%;
+  height: 100%;
+}
